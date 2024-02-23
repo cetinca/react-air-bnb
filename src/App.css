@@ -42,3 +42,21 @@ nav {
 .hero--text {
   text-align: left;
 }
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card--image {
+  width: 10vw;
+}
+
+.card--item {
+  line-height: 0.5;
+  text-align: left;
+}
+
+.card--price {
+  font-weight: 600;
+}
