@@ -50,6 +50,7 @@ nav {
 }
 .card--image {
   width: 10vw;
+  border-radius: 5px;
 }
 
 .card--item {
