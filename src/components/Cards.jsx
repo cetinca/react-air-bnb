@@ -1,19 +1,14 @@
 import Card from "./Card";
-import card1 from "../images/card1.png"
+import Data from "./Data";
 
 
-const cardData = {
-    src: card1,
-    text: "bike",
-    alt: "Bike",
-}
-
-function Cards () {
+function Cards() {
+    const MappedCards = Data.map(x => (
+        < Card key={x.id} src={x.coverImg} title={x.title} description={x.description} alt={x.title} stats={x.stats} price={x.price} location={x.location} openSpots={x.openSpots} />
+    ))
     return (
         <div className="cards">
-            < Card  src={card1} text="bike1" alt="Bike1" rating="4.7" price="15"/>
-            < Card  src={card1} text="bike2" alt="Bike2" rating="4.2" price="23"/>
-            < Card  src={card1} text="bike3" alt="Bike3" rating="5.8" price="18"/>
+            {MappedCards}
         </div>
     )
 }
